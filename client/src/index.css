@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: oklch(0.975 0.01 85);
+  --color-foreground: oklch(0.28 0.03 60);
+  --color-primary: oklch(0.45 0.09 150);
+  --color-primary-foreground: oklch(0.98 0.005 85);
+  --color-secondary: oklch(0.93 0.015 85);
+  --color-secondary-foreground: oklch(0.32 0.03 60);
+  --color-muted: oklch(0.93 0.015 85);
+  --color-muted-foreground: oklch(0.5 0.02 60);
+  --color-border: oklch(0.88 0.015 85);
+  --color-card: oklch(0.99 0.005 85);
+  --color-card-foreground: oklch(0.28 0.03 60);
+  --color-destructive: oklch(0.55 0.19 25);
+
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Fraunces', ui-serif, Georgia, serif;
+}
+
+:root {
+  --signal-green: oklch(0.55 0.14 150);
+  --signal-amber: oklch(0.72 0.14 75);
+  --signal-red: oklch(0.55 0.2 25);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-bold {
+  font-family: var(--font-serif);
+}
+
+/* Mobile-first app shell: centered column with bottom-nav clearance */
+.app-shell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 88px; /* clear the fixed bottom nav */
+}
+
+.card-elevated {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px oklch(0.28 0.03 60 / 0.08);
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.25s ease-out;
+}
