@@ -8,6 +8,7 @@ import Triage from '@/pages/Triage';
 import Scanner from '@/pages/Scanner';
 import Profile from '@/pages/Profile';
 import FindPro from '@/pages/FindPro';
+import Legal from '@/pages/Legal';
 import NotFound from '@/pages/NotFound';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/scanner" component={Scanner} />
           <Route path="/profile" component={Profile} />
           <Route path="/find-pro" component={FindPro} />
+          <Route path="/legal" component={Legal} />
           <Route component={NotFound} />
         </Switch>
         <AppNav />

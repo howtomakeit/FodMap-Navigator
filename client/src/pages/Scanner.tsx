@@ -195,6 +195,20 @@ function ResultView({ result, onBack }: { result: ScanResult; onBack: () => void
           )}
 
           <p className="text-xs text-muted-foreground text-center">⚠️ {result.disclaimer}</p>
+          {result.barcode && (
+            <p className="text-xs text-muted-foreground text-center">
+              Product data from{' '}
+              <a
+                href="https://world.openfoodfacts.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-primary"
+              >
+                Open Food Facts
+              </a>{' '}
+              (ODbL) — verify against the physical label.
+            </p>
+          )}
 
           <Button onClick={onBack} className="w-full h-12 font-semibold">
             Scan Another Product

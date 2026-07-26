@@ -96,9 +96,25 @@ export default function Home() {
           ))}
         </section>
 
-        <p className="text-xs text-muted-foreground text-center px-4 pb-6">
+        <p className="text-xs text-muted-foreground text-center px-4 pb-2">
           ⚠️ This is an educational tool, not medical advice. Always confirm with a
           doctor or dietitian.
+        </p>
+        <p className="text-xs text-muted-foreground text-center px-4 pb-6">
+          <a href="/legal" className="underline hover:text-primary">
+            Privacy · Terms · Medical Disclaimer
+          </a>
+          {' · '}
+          Product data ©{' '}
+          <a
+            href="https://world.openfoodfacts.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-primary"
+          >
+            Open Food Facts
+          </a>{' '}
+          (ODbL)
         </p>
       </div>
     </div>
