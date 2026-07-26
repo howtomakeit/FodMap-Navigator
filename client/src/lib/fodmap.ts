@@ -1,5 +1,5 @@
 /**
- * FODMAP Navigator — FODMAP Rules Engine
+ * Everyday FODMAP — FODMAP Rules Engine
  */
 
 export type FODMAPSubgroup = 'lactose' | 'fructans' | 'gos' | 'fructose' | 'polyols';

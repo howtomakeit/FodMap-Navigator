@@ -44,7 +44,7 @@ export default function Home() {
               🌿
             </div>
             <h1 className="text-4xl font-bold text-foreground mb-2">
-              FODMAP Navigator
+              Everyday FODMAP
             </h1>
             <p className="text-lg text-muted-foreground">
               Figure out your stomach triggers. Find food you can eat.

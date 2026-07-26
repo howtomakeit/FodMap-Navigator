@@ -1,4 +1,4 @@
-# FODMAP Navigator 🌿
+# Everyday FODMAP 🌿
 
 Figure out your stomach triggers. Find food you can eat.
 
